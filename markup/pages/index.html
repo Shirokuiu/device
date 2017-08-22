@@ -12,28 +12,23 @@
             <div class="page-header__blocksWrap">
               <div class="page-header__block-left">
                 <div class="logo">
-                  <a class="logo__link">Device</a>
+                  <a class="logo__link logo__link--active">Device</a>
                 </div>
                 <div class="page-header__search">
-                  <input type="search" class="page-header__searchInput" name="input-search" placeholder="Поиск по сайту">
+                  <div class="page-header__search-inputWrap">
+                    <input type="text" id="header-search" class="page-header__searchInput" name="input-search" placeholder="Поиск по сайту">
+                    <label class="page-header__search-icon" for="header-search"></label>
+                  </div>
                   <button class="page-header__searchButton" type="button">Найти</button>
                 </div>
                 <h2 class="page-header__tab">Каталог товаров</h2>
-                <ul class="page-header__tabList">
-                  <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Виртуальная реальность</a></li>
-                  <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Моноподы для селфи</a></li>
-                  <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Экшн-камеры</a></li>
-                  <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Фитнес-браслеты</a></li>
-                  <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Умные часы</a></li>
-                  <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Квадрокоптеры</a></li>
-                </ul>
               </div>
               <div class="page-header__block-right">
                 <div class="user-block">
                   <ul class="user-block__list">
-                    <li class="user-block__items"><a href="#" class="user-block__item">Войти</a></li>
-                    <li class="user-block__items"><a href="#" class="user-block__item">Сравнить</a></li>
-                    <li class="user-block__items"><a href="#" class="user-block__item">Корзина</a></li>
+                    <li class="user-block__items"><a href="#" class="user-block__item user-block__item--login">Войти</a></li>
+                    <li class="user-block__items user-block__items--margin"><a href="#" class="user-block__item user-block__item--compare">Сравнить</a></li>
+                    <li class="user-block__items"><a href="#" class="user-block__item user-block__item--basket">Корзина</a></li>
                   </ul>
                 </div>
                 <ul class="page-header__contactsList">
@@ -43,66 +38,80 @@
                 </ul>
               </div>
             </div>
+            <div class="page-header__dropdownTab">
+              <ul class="page-header__dropdownList">
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Виртуальная реальность</a></li>
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Моноподы для селфи</a></li>
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Экшн-камеры</a></li>
+              </ul>
+              <ul class="page-header__dropdownList">
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Фитнес-браслеты</a></li>
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Умные часы</a></li>
+              </ul>
+              <ul class="page-header__dropdownList">
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Квадрокоптеры</a></li>
+              </ul>
+            </div>
             <div class="page-header__slider">
               <div class="page-header__slider-row">
                 <div class="page-header__slider-slide page-header__slider-slide--slide1">
-                  <div class="page-header__slider-img"><img src="" alt=""></div>
+                  <div class="page-header__slider-img"><img src="%=static=%img/content/slide-img1.png" alt="Картинка слайда"></div>
                   <div class="page-header__slider-blockContent">
                     <h2 class="page-header__slider-blockContent-headline">Делай селфи, как Бен Стиллер!</h2>
                     <p class="page-header__slider-blockConten-text">Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <a href="#" class="page-header__slider-blockConten-link">Подробнее</a>
+                    <a href="#" class="page-header__slider-blockConten-link"></a>
                     <ul class="page-header__slider-blockConten-list">
                       <li class="page-header__slider-blockConten-items">
-                        <p class="page-header__slider-blockConten-item">8,5 м</p>
+                        <p class="page-header__slider-blockConten-item page-header__slider-blockConten-item--title">8,5 м</p>
                         <p class="page-header__slider-blockConten-item">Длина палки</p>
                       </li>
                       <li class="page-header__slider-blockConten-items">
-                        <p class="page-header__slider-blockConten-item">5 кг</p>
+                        <p class="page-header__slider-blockConten-item page-header__slider-blockConten-item--title">5 кг</p>
                         <p class="page-header__slider-blockConten-item">Вес палки</p>
                       </li>
                       <li class="page-header__slider-blockConten-items">
-                        <p class="page-header__slider-blockConten-item">Карбон</p>
+                        <p class="page-header__slider-blockConten-item page-header__slider-blockConten-item--title">Карбон</p>
                         <p class="page-header__slider-blockConten-item">Материал</p>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="page-header__slider-slide page-header__slider-slide--slide1">
-                  <div class="page-header__slider-img"><img src="" alt=""></div>
+                <div class="page-header__slider-slide page-header__slider-slide--slide2">
+                  <div class="page-header__slider-img"><img src="%=static=%img/content/slide-img2.png" alt="Картинка второго слайда"></div>
                   <div class="page-header__slider-blockContent">
                     <h2 class="page-header__slider-blockContent-headline">Худеем правильно!</h2>
                     <p class="page-header__slider-blockConten-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                    <a href="#" class="page-header__slider-blockConten-link">Подробнее</a>
+                    <a href="#" class="page-header__slider-blockConten-link"></a>
                     <ul class="page-header__slider-blockConten-list">
                       <li class="page-header__slider-blockConten-items">
-                        <p class="page-header__slider-blockConten-item">48 часов</p>
+                        <p class="page-header__slider-blockConten-item page-header__slider-blockConten-item--title">48 часов</p>
                         <p class="page-header__slider-blockConten-item">Без подзарядки</p>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="page-header__slider-slide page-header__slider-slide--slide1">
-                  <div class="page-header__slider-img"><img src="" alt=""></div>
+                <div class="page-header__slider-slide page-header__slider-slide--slide3">
+                  <div class="page-header__slider-img"><img src="%=static=%img/content/slide-img3.png" alt="Картинка слайдера"></div>
                   <div class="page-header__slider-blockContent">
                     <h2 class="page-header__slider-blockContent-headline">Порхает как бабочка, жалит как пчела!</h2>
                     <p class="page-header__slider-blockConten-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                    <a href="#" class="page-header__slider-blockConten-link">Подробнее</a>
+                    <a href="#" class="page-header__slider-blockConten-link"></a>
                     <ul class="page-header__slider-blockConten-list">
                       <li class="page-header__slider-blockConten-items">
-                        <p class="page-header__slider-blockConten-item">800 м</p>
+                        <p class="page-header__slider-blockConten-item page-header__slider-blockConten-item--title">800 м</p>
                         <p class="page-header__slider-blockConten-item">Дальность полета</p>
                       </li>
                       <li class="page-header__slider-blockConten-items">
-                        <p class="page-header__slider-blockConten-item">50 м</p>
+                        <p class="page-header__slider-blockConten-item page-header__slider-blockConten-item--title">50 м</p>
                         <p class="page-header__slider-blockConten-item">Радиус поражения</p>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div class="page-header__slider-controls">
-                  <button class="page-header__slider-control page-header__slider-control--1" type="button"></button>
-                  <button class="page-header__slider-control page-header__slider-control--2" type="button"></button>
-                  <button class="page-header__slider-control page-header__slider-control--3" type="button"></button>
+                  <button class="page-header__slider-control page-header__slider-control--active" type="button"></button>
+                  <button class="page-header__slider-control" type="button"></button>
+                  <button class="page-header__slider-control" type="button"></button>
                 </div>
               </div>
             </div>

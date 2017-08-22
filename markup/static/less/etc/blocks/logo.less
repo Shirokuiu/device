@@ -1,0 +1,27 @@
+.logo {
+  position: relative;
+  top: -14px;
+}
+
+.logo__link {
+  margin-left: -4px;
+  
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &--active {
+    cursor: default;
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+}
