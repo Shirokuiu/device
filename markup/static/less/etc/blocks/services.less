@@ -1,0 +1,217 @@
+.services {
+  margin-bottom: 94px;
+  
+  background-color: #e6e6e6;
+}
+
+.services__slider {
+  padding-right: 5.172413793103448%;
+}
+
+.services__slider-row {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.services__slider-slide {
+  position: relative;
+  
+  width: 700px;
+  min-height: 288px;
+  margin-top: -31px;
+  &--slide1,
+  &--slide2,
+  &--slide3 {
+    &::before {
+      content: '';
+      
+      position: absolute;
+      top: 8px;
+      right: 0;
+    }
+  }
+  &--slide1 {
+    &::before {
+      .bg(@delivery);
+    }
+  }
+  &--slide2 {
+    display: none;
+    &::before {
+      top: -8px;
+      
+      .bg(@warranty);
+    }
+  }
+  &--slide3 {
+    display: none;
+    &::before {
+      top: -8px;
+      
+      .bg(@credit);
+    }
+  }
+}
+
+.services__slider-slide-headline {
+  .reset();
+  
+  margin-bottom: 35px;
+  
+  font-size: 47px;
+  line-height: 49px;
+  font-weight: 700;
+}
+
+.services__slider-slide-text {
+  .reset();
+  
+  width: 430px;
+  
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #464646;
+}
+
+.services__slider-controls {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  
+  display: flex;
+  flex-direction: column;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: -107px;
+    right: 0;
+    
+    width: 7px;
+    height: 319px;
+    
+    background-color: #000000;
+  }
+}
+
+.services__slider-control {
+  .reset();
+  
+  width: 278px;
+  height: 26px;
+  margin-bottom: 36px;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  background-color: transparent;
+  
+  border: none;
+  outline: none;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &--active {
+    color: #f7e184;
+    
+    background-color: #000000;
+    &::after {
+      display: none;
+    }
+  }
+  &--delivery,
+  &--warranty,
+  &--credit {
+    position: relative;
+    &::before,
+    &::after {
+      content: '';
+      
+      position: absolute;
+      top: 3px;
+      left: 19px;
+    }
+  }
+  &--delivery {
+    &::before {
+      content: 'Доставка';
+      
+      z-index: 10;
+      
+      width: 160px;
+    }
+    &::after {
+      top: 13px;
+      z-index: 5;
+      
+      width: 160px;
+      height: 8px;
+      
+      background-color: #f1c62a;
+      
+      transition: 0.1s ease;
+    }
+    &:hover {
+      &::after {
+        transform: scaleY(3);
+      }
+    }
+  }
+  &--warranty {
+    &::before {
+      content: 'Гарантия';
+      
+      z-index: 10;
+      
+      width: 160px;
+    }
+    &::after {
+      top: 13px;
+      z-index: 5;
+      
+      width: 160px;
+      height: 8px;
+      
+      background-color: #f1c62a;
+      
+      transition: 0.1s ease;
+    }
+    &:hover {
+      &::after {
+        transform: scaleY(5);
+      }
+    }
+  }
+  &--credit {
+    &::before {
+      content: 'Кредит';
+      
+      z-index: 10;
+      
+      width: 160px;
+    }
+    &::after {
+      top: 13px;
+      z-index: 5;
+      
+      width: 160px;
+      height: 8px;
+      
+      background-color: #f1c62a;
+      
+      transition: 0.1s ease;
+    }
+    &:hover {
+      &::after {
+        transform: scaleY(5);
+      }
+    }
+  }
+}

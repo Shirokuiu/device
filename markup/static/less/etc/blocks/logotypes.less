@@ -1,0 +1,39 @@
+.logotypes {
+  margin-bottom: 91px;
+}
+
+.logotypes__content {
+  display: flex;
+}
+
+.logotypes__link {
+  display: block;
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &--1 {
+    .bg(@logotype1);
+    &:hover {
+      .bg(@logotype1-hover);
+    }
+  }
+  &--2 {
+    .bg(@logotype2);
+    &:hover {
+      .bg(@logotype2-hover);
+    }
+  }
+  &--3 {
+    .bg(@logotype3);
+    &:hover {
+      .bg(@logotype3-hover);
+    }
+  }
+  &--4 {
+    .bg(@logotype4);
+    &:hover {
+      .bg(@logotype4-hover);
+    }
+  }
+}

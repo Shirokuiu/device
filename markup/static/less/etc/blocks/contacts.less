@@ -1,0 +1,160 @@
+.contacts {
+  margin-bottom: 85px;
+}
+
+.contacts__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__blockLeft {
+  position: relative;
+  
+  width: 460px;
+  padding-top: 57px;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 80px;
+    height: 7px;
+    
+    background-color: #000;
+  }
+}
+
+.contacts__headline {
+  .reset();
+  
+  margin-bottom: 43px;
+  
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 49px;
+}
+
+.contacts__text {
+  .reset();
+  
+  margin-bottom: 16px;
+  
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #464646;
+  &--margin {
+    margin-bottom: 69px;
+  }
+  &--blockRight-margin {
+    margin-bottom: 23px;
+  }
+}
+
+.contacts__list {
+  .reset();
+  
+  margin-bottom: 73px;
+  
+  list-style: none;
+}
+
+.contacts__items {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 34px;
+  
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: 3px;
+    left: 0;
+    
+    width: 4px;
+    height: 4px;
+    
+    border: 3px solid #000000;
+    border-radius: 50%;
+    
+    opacity: 0.3;
+  }
+}
+
+.contacts__link {
+  position: relative;
+  
+  display: block;
+  width: 260px;
+  margin-top: auto;
+  
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  &::before {
+    content: 'Подробнее о нас';
+    
+    position: relative;
+    z-index: 10;
+  }
+  &::after {
+    content: '';
+    
+    position: absolute;
+    top: 7px;
+    left: 0;
+    z-index: 5;
+    
+    width: 260px;
+    height: 8px;
+    
+    background-color: #f1c62a;
+    
+    transition: 0.2s ease;
+  }
+  &:hover {
+    &::after {
+      transform: scaleY(5);
+    }
+  }
+}
+
+.contacts__blockRight {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  padding-top: 57px;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 80px;
+    height: 7px;
+    
+    background-color: #000;
+  }
+}
+
+.contacts__map {
+  img {
+    display: block;
+    height: 222px;
+  }
+}
