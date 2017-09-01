@@ -1,0 +1,41 @@
+.page-footer {
+  background-color: #464646;
+}
+
+.page-footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 59px;
+  padding-bottom: 60px;
+}
+
+.page-footer__address {
+  position: relative;
+  
+  width: 220px;
+  min-height: 205px;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    width: 80px;
+    height: 7px;
+    
+    background-color: #ffc700;
+  }
+}
+
+.page-footer__address-text {
+  .reset();
+  
+  margin-top: 37px;
+  
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #ffffff;
+}

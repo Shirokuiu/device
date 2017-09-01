@@ -1,6 +1,10 @@
 .user-block {
   margin-top: 50px;
   margin-bottom: 42px;
+  &--footer {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
 }
 
 .user-block__list {
@@ -9,6 +13,71 @@
   display: flex;
   
   list-style: none;
+  &--footer {
+    .user-block__items {
+      &--margin {
+        margin-left: 44px;
+      }
+    }
+    .user-block__item {
+      color: #949494;
+      
+      opacity: 1;
+      &:hover {
+        color: #ffffff;
+        
+        opacity: 1;
+      }
+      &:active {
+        opacity: 0.3;
+      }
+      &--login {
+        &::before {
+          .bg(@user-footer);
+        }
+        &:hover {
+          &::before {
+            opacity: 0.6;  
+          }
+        }
+        &:active {
+          &::before {
+            opacity: 0.3;
+          }
+        }
+      }
+      &--compare {
+        &::before {
+          .bg(@compare-footer);
+        }
+        &:hover {
+          &::before {
+            opacity: 0.6;  
+          }
+        }
+        &:active {
+          &::before {
+            opacity: 0.3;
+          }
+        }
+      }
+      &--basket {
+        &::before {
+          .bg(@basket-footer);
+        }
+        &:hover {
+          &::before {
+            opacity: 0.6;  
+          }
+        }
+        &:active {
+          &::before {
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+  }
 }
 
 .user-block__items {
