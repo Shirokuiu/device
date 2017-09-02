@@ -30,6 +30,7 @@ $(document).ready(function(){
     margin:0,
     autoplay: false,
     mouseDrag: false,
+    touchDrag: false,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
     smartSpeed: 10,
@@ -44,5 +45,15 @@ $(document).ready(function(){
             items:1
         }
     }
+  });
+  
+  $('#header-search').focusin(function () {
+    $('.page-header__searchButton').addClass('page-header__searchButton--vissible');
+    $(this).addClass('page-header__searchInput--focus');
+    
+  });
+  $('#header-search').focusout(function () {
+    $('.page-header__searchButton').removeClass('page-header__searchButton--vissible');
+    $(this).removeClass('page-header__searchInput--focus');
   });
 });
