@@ -5,32 +5,30 @@
 }
 
 .services__slider {
-  padding-right: 5.172413793103448%;
-}
-
-.services__slider-row {
   position: relative;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  top: -30px;
 }
 
 .services__slider-slide {
   position: relative;
   
-  width: 700px;
   min-height: 288px;
-  margin-top: -31px;
   &--slide1,
   &--slide2,
   &--slide3 {
+    .services__slider-slide-content {
+      position: absolute;
+      top: 0;
+      left: 36%;
+      
+      width: 450px;
+    }
     &::before {
       content: '';
       
       position: absolute;
       top: 8px;
-      right: 0;
+      right: 5.172413793103448%;
     }
   }
   &--slide1 {
@@ -39,7 +37,6 @@
     }
   }
   &--slide2 {
-    display: none;
     &::before {
       top: -8px;
       
@@ -47,7 +44,6 @@
     }
   }
   &--slide3 {
-    display: none;
     &::before {
       top: -8px;
       
@@ -68,8 +64,6 @@
 
 .services__slider-slide-text {
   .reset();
-  
-  width: 430px;
   
   font-size: 15px;
   font-weight: 300;
@@ -211,6 +205,159 @@
     &:hover {
       &::after {
         transform: scaleY(5);
+      }
+    }
+  }
+}
+
+#services__slider-theme {
+  .owl-dots {
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    &::before {
+      content: '';
+
+      position: absolute;
+      top: -85px;
+      right: 0;
+
+      width: 7px;
+      height: 319px;
+
+      background-color: #000000;
+    }
+  }
+  .owl-dot {
+    span {
+      display: block;
+      width: 278px;
+      height: 3px;
+      margin-bottom: 36px;
+      padding-top: 14px;
+      padding-bottom: 20px;
+
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      background-color: transparent;
+
+      border: none;
+      outline: none;
+    }
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3){
+      span {
+        position: relative;
+        &::before,
+        &::after {
+          content: '';
+
+          position: absolute;
+          top: 3px;
+          left: 28px;
+        }
+      }
+    }
+    &:first-child {
+      span {
+        &::before {
+          content: 'Доставка';
+
+          z-index: 10;
+
+          width: 160px;
+        }
+        &::after {
+          top: 13px;
+          left: 0;
+          z-index: 5;
+
+          width: 160px;
+          height: 8px;
+
+          background-color: #f1c62a;
+
+          transition: 0.1s ease;
+        }
+        &:hover {
+          &::after {
+            transform: scaleY(5);
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      span {
+        &::before {
+          content: 'Гарантия';
+
+          z-index: 10;
+
+          width: 160px;
+        }
+        &::after {
+          top: 13px;
+          left: 0;
+          z-index: 5;
+
+          width: 160px;
+          height: 8px;
+
+          background-color: #f1c62a;
+
+          transition: 0.1s ease;
+        }
+        &:hover {
+          &::after {
+            transform: scaleY(5);
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      span {
+        margin-bottom: 0;
+        &::before {
+          content: 'Кредит';
+          
+          left: 40px;
+          z-index: 10;
+
+          width: 160px;
+        }
+        &::after {
+          top: 13px;
+          left: 0;
+          z-index: 5;
+
+          width: 160px;
+          height: 8px;
+
+          background-color: #f1c62a;
+
+          transition: 0.1s ease;
+        }
+        &:hover {
+          &::after {
+            transform: scaleY(5);
+          }
+        }
+      }
+    }
+  }
+  .active {
+    span {
+      color: #f7e184;
+
+      background-color: #000000;
+      &::after {
+        display: none;
       }
     }
   }
