@@ -13,6 +13,13 @@
   display: flex;
   
   list-style: none;
+  &--login {
+    .user-block__items {
+      &--user {
+        display: none;
+      }
+    }
+  }
   &--footer {
     .user-block__items {
       &--margin {
@@ -74,6 +81,21 @@
           &::before {
             opacity: 0.3;
           }
+        }
+      }
+    }
+  }
+  &--logout {
+    .user-block__item {
+      &--user {
+        &::before {
+          .bg(@user);
+        }
+      }
+      &--login {
+        opacity: 0.3;
+        &::before {
+          display: none;
         }
       }
     }

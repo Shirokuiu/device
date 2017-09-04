@@ -6,9 +6,91 @@
   <body class="page">
     %=symbols=%
     <div class="page__wrapper">
-      <header class="page-header"></header>
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__content">
+            <div class="page-header__blocksWrap">
+              <div class="page-header__block-left">
+                <div class="logo">
+                  <a class="logo__link logo__link--active">Device</a>
+                </div>
+                <div class="page-header__search">
+                  <div class="page-header__search-inputWrap">
+                    <input type="text" id="header-search" class="page-header__searchInput" name="input-search" placeholder="Поиск по сайту">
+                    <label class="page-header__search-icon" for="header-search"></label>
+                  </div>
+                  <button class="page-header__searchButton" type="button">Найти</button>
+                </div>
+                <h2 class="page-header__tab">Каталог товаров</h2>
+              </div>
+              <div class="page-header__block-right">
+                <div class="user-block">
+                  <ul class="user-block__list">
+                    <li class="user-block__items"><a href="#" class="user-block__item user-block__item--login">Войти</a></li>
+                    <li class="user-block__items user-block__items--margin"><a href="#" class="user-block__item user-block__item--compare">Сравнить</a></li>
+                    <li class="user-block__items"><a href="#" class="user-block__item user-block__item--basket">Корзина</a></li>
+                  </ul>
+                </div>
+                <ul class="page-header__contactsList">
+                  <li class="page-header__contactsItems"><a href="#" class="page-header__contactsItem">Доставка</a></li>
+                  <li class="page-header__contactsItems"><a href="#" class="page-header__contactsItem">Гарантия</a></li>
+                  <li class="page-header__contactsItems"><a href="#" class="page-header__contactsItem">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-header__dropdownTab">
+              <ul class="page-header__dropdownList">
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Виртуальная реальность</a></li>
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Моноподы для селфи</a></li>
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Экшн-камеры</a></li>
+              </ul>
+              <ul class="page-header__dropdownList">
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Фитнес-браслеты</a></li>
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Умные часы</a></li>
+              </ul>
+              <ul class="page-header__dropdownList">
+                <li class="page-header__tabItems"><a href="#" class="page-header__tabItem">Квадрокоптеры</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
       <main class="page-content"></main>
-      <footer class="page-footer"></footer>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__content">
+            <div class="page-footer__address">
+              <div class="logo logo--footer">
+                <a class="logo__link logo__link--footer logo__link--active">Device</a>
+              </div>
+              <p class="page-footer__address-text">г. Москва, ул. Строителей, 15</p>
+            </div>
+            <div class="socials">
+              <ul class="page-header__contactsList page-header__contactsList--footer">
+                <li class="page-header__contactsItems"><a href="#" class="page-header__contactsItem">Доставка</a></li>
+                <li class="page-header__contactsItems"><a href="#" class="page-header__contactsItem">Гарантия</a></li>
+                <li class="page-header__contactsItems"><a href="#" class="page-header__contactsItem">Контакты</a></li>
+              </ul>
+              <div class="socials__icons">
+                <a href="#" class="socials__icon socials__icon--fb"></a>
+                <a href="#" class="socials__icon socials__icon--inst"></a>
+                <a href="#" class="socials__icon socials__icon--tw"></a>
+              </div>
+            </div>
+            <div class="copyright">
+              <div class="user-block user-block--footer">
+                <ul class="user-block__list user-block__list--footer">
+                  <li class="user-block__items"><a href="#" class="user-block__item user-block__item--login">Войти</a></li>
+                  <li class="user-block__items user-block__items--margin"><a href="#" class="user-block__item user-block__item--compare">Сравнить</a></li>
+                  <li class="user-block__items"><a href="#" class="user-block__item user-block__item--basket">Корзина</a></li>
+                </ul>
+              </div>
+              <a href="tel:74954959595" class="copyright__tel">Тел.: +7 (495) 495-95-95</a>
+              <a class="copyright__authors" href="https://htmlacademy.ru/"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>

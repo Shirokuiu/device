@@ -1,0 +1,127 @@
+.good-cart {
+  margin-bottom: 72px;
+  
+  cursor: pointer;
+  &:hover {
+    .good-cart__img-hoverOverlay {
+      display: block;
+    }
+  }
+  &:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+.good-cart__img {
+  position: relative;
+  
+  width: 360px;
+  height: 380px;
+  margin-bottom: 36px;
+  img {
+    display: block;
+  }
+}
+
+.good-cart__img-hoverOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  display: none;
+  width: 360px;
+  height: 380px;
+  
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.good-cart__img-hoverOverlay-wrapText {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  
+  width: 210px;
+  margin: auto;
+}
+
+.good-cart__img-hoverOverlay-link {
+  position: relative;
+  
+  display: block;
+  width: 200px;
+  margin-bottom: 32px;
+  
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  &:hover {
+    &::after {
+      transform: scaleY(5);
+    }
+  }
+  &::before {
+    content: 'В корзину';
+    
+    position: relative;
+    z-index: 10;
+  }
+  &::after {
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    
+    height: 8px;
+    margin: auto;
+    
+    background-color: #f0c52e;
+    
+    transition: 0.1s ease;
+  }
+}
+
+.good-cart__img-hoverOverlay-text {
+  display: block;
+  
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  
+  opacity: 0.5;
+}
+
+.good-cart__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.good-cart__headline {
+  .reset();
+  
+  width: 252px;
+  
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+.good-cart__price {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #464646;
+}
