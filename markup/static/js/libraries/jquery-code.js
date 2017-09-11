@@ -9,7 +9,7 @@ $(document).ready(function(){
   $("#slider-header__theme").owlCarousel({
     loop:true,
     margin:0,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
     smartSpeed: 1000,
