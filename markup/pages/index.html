@@ -207,9 +207,29 @@
                 <h2 class="contacts__headline">Контакты</h2>
                 <p class="contacts__text contacts__text--blockRight-margin">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                 <div class="contacts__map"><img src="%=static=%img/content/map.jpg" alt="Карта"></div>
-                <a href="#" class="contacts__link contacts__link--map"></a>
+                <a id="contactsLink" href="#" class="contacts__link contacts__link--map"></a>
               </div>
             </div>
+          </div>
+          <div id="writeUs" class="write-us">
+            <form id="writeUsForm" class="write-us__form" action="action.php">
+              <button id="writeUsFormExit" class="write-us__form-exit" type="button"></button>
+              <ul class="write-us__form-list">
+                <li class="write-us__form-items">
+                  <label for="writeUsname">Ваше имя:</label>
+                  <input id="writeUsname" type="text" name="writeUsname" placeholder="Представьтесь, пожалуйста">
+                </li>
+                <li class="write-us__form-items">
+                  <label for="writeUsemail">Ваш e-mail:</label>
+                  <input id="writeUsemail" type="email" name="writeUsemail" placeholder="Для отправки ответа">
+                </li>
+              </ul>
+              <div class="write-us__form-textarea">
+                <label for="writeUsFormtextarea">Текст письма:</label>
+                <textarea name="writeUsFormTextarea" id="writeUsFormtextarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+              </div>
+              <button class="write-us__form-submit" type="submit"></button>
+            </form>
           </div>
         </div>
       </main>

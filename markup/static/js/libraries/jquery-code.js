@@ -56,4 +56,33 @@ $(document).ready(function(){
     $('.page-header__searchButton').removeClass('page-header__searchButton--vissible');
     $(this).removeClass('page-header__searchInput--focus');
   });
+  
+  var contactsLink = $('#contactsLink');
+  var writeUs = $('#writeUs');
+  var writeUsFormExit = $('#writeUsFormExit');
+  
+  contactsLink.click(function (event) {
+    event.preventDefault();
+    
+    writeUs.addClass('write-us--vissible');
+  });
+  
+  writeUsFormExit.click(function () {
+    writeUs.removeClass('write-us--vissible');
+  });
+  
+  $('#writeUsForm').validate({
+    rules: {
+      writeUsname: {
+        required: true
+      },
+      writeUsemail: {
+        required: true,
+        email: true
+      },
+      writeUsFormTextarea: {
+        required: true
+      }
+    }
+  });
 });
